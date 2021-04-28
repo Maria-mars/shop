@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+		<nav class="light-blue lighten-1" role="navigation">
+			<div class="nav-wrapper container"><a id="logo-container" href="/product/" class="brand-logo">Shop</a>
+				<ul class="right hide-on-med-and-down">
+					<li>
+						<a href="/product/">Home</a>
+					</li>
+					<li>
+						<a href="/product/list/">Products</a>
+					</li>
+					<li>
+						<a href="/category/">Categories</a>
+					</li>
+				</ul>
+		    </div>
+	    </nav>
+	    <div class="container">
+	    	<div class="section">
+	    		{% block content %} Sorry, an error has occured. Please contact us. {% endblock %}
+	    	</div>
+    	</div>
+	</body>
+</html>
